@@ -96,43 +96,43 @@ std::string toBeaufort( float mps, std::string &name )
 	long int iMps=lround(mps*10);
 
 	if( iMps < 3 ){  //0.0-0.2 m/s
-		name = "Stille";
+		name = "Calm";
 		return "0";
 	}else if( iMps < 16 ){ //0.3-1.5 m/s
-		name = "Flau vind";
+		name = "Light air";
 		return "1";
 	}else if( iMps < 34 ){ //1.6-3.3 m/s
-		name = "Svak vind";
+		name = "Light breeze";
 		return "2";
 	}else if( iMps < 55 ){ //3.4-5.4 m/s
-		name = "Lett bris";
+		name = "Gentle breeze";
 		return "3";
 	}else if( iMps < 80 ){ //5.5-7.9 m/s
-		name = "Laber bris";
+		name = "Moderate breeze";
 		return "4";
 	}else if( iMps < 108 ){ //8.0-10.7 m/s
-		name = "Frisk bris";
+		name = "Fresh breeze";
 		return "5";
 	}else if( iMps < 139 ){ //10.8-13.8 m/s
-		name = "Liten kuling";
+		name = "Strong breeze";
 		return "6";
 	}else if( iMps < 172 ){ //13.9-17.1 m/s
-		name = "Stiv kuling";
+		name = "Near gale";
 		return "7";
 	}else if( iMps < 208 ){ //17.2-20.7 m/s
-		name = "Sterk kuling";
+		name = "Gale";
 		return "8";
 	}else if( iMps < 245 ){ //20.8-24.4 m/s
-		name = "Liten storm";
+		name = "Strong gale";
 		return "9";
 	}else if( iMps < 285 ){ //24.5-28.4 m/s
-		name = "Full storm";
+		name = "Storm";
 		return "10";
 	}else if( iMps < 327 ){ //28.5-32.6 m/s
-		name = "Sterk storm";
+		name = "Violent storm";
 		return "11";
 	}else{
-		name = "Orkan";
+		name = "Hurricane";
 		return "12";
 	}
 
